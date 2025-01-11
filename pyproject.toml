@@ -7,13 +7,18 @@ packages = ["src/universal_parser_it_stud_io"]
 
 [project]
 name = "universal_parser_it_stud_io"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
   { name="Christian Mueller", email="christian.mueller@it-stud.io" },
 ]
 description = "An universal parser for various file formats"
 readme = "README.md"
 requires-python = ">=3.8"
+dependencies = [
+  "pyyaml>=6.0.2",
+  "jsonschema>=4.23.0",
+  "xmlschema>=3.4.3"
+]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
