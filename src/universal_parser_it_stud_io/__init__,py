@@ -1,2 +1,1 @@
-from .UniversalParser import UniversalParser
-from .ParserEngines import ParserEngines
+from UniversalParser import UniversalParser

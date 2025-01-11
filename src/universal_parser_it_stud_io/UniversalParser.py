@@ -2,10 +2,10 @@ import json
 import csv
 import yaml
 import xml.etree.ElementTree as et
-from ParserEngines.JsonParserEngine import JsonParserEngine
-from ParserEngines.XmlParserEngine import XmlParserEngine
-from ParserEngines.YamlParserEngine import YamlParserEngine
-from ParserEngines.CsvParserEngine import CsvParserEngine
+from .ParserEngines.JsonParserEngine import JsonParserEngine
+from .ParserEngines.XmlParserEngine import XmlParserEngine
+from .ParserEngines.CsvParserEngine import CsvParserEngine
+from .ParserEngines.YamlParserEngine import YamlParserEngine
 
 class UniversalParser:
     def __init__(self, data=None):

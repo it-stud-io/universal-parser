@@ -9,9 +9,6 @@ This package can be used to parse and validate data from various file formats li
 
 ### create app.py file
 ``` 
-from universal_parser_it_stud_io import UniversalParser
-
-# MAIN
 json_data = '{"name": "John", "age": 30}'
 json_schema = {
     "type": "object",
@@ -55,22 +52,24 @@ yaml_schema = {
     "required": ["name", "age"]
 }
 
-parser = UniversalParser(json_data)
+from universal_parser_it_stud_io import UniversalParser
+
+parser = UniversalParser.UniversalParser(json_data)
 print("Detected format: ", parser._data_format)
 print(parser.parse())
 print(parser.validate(json_schema))
 
-parser = UniversalParser(xml_data)
+parser = UniversalParser.UniversalParser(xml_data)
 print("Detected format: ", parser._data_format)
 print(parser.parse())
 print(parser.validate(xml_schema))
 
-parser = UniversalParser(csv_data)
+parser = UniversalParser.UniversalParser(csv_data)
 print("Detected format: ", parser._data_format)
 print(parser.parse())
 print(parser.validate(csv_schema))
 
-parser = UniversalParser(yaml_data)
+parser = UniversalParser.UniversalParser(yaml_data)
 print("Detected format: ", parser._data_format)
 print(parser.parse())
 print(parser.validate(yaml_schema))
