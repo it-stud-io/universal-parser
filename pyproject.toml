@@ -7,7 +7,7 @@ packages = ["src/universal_parser_it_stud_io"]
 
 [project]
 name = "universal_parser_it_stud_io"
-version = "1.0.0"
+version = "1.0.1"
 authors = [
   { name="Christian Mueller", email="christian.mueller@it-stud.io" },
 ]

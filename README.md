@@ -55,22 +55,22 @@ yaml_schema = {
 from universal_parser_it_stud_io import UniversalParser
 
 parser = UniversalParser.UniversalParser(json_data)
-print("Detected format: ", parser._data_format)
+print("Detected format: ", parser.get_detected_format())
 print(parser.parse())
 print(parser.validate(json_schema))
 
 parser = UniversalParser.UniversalParser(xml_data)
-print("Detected format: ", parser._data_format)
+print("Detected format: ", parser.get_detected_format())
 print(parser.parse())
 print(parser.validate(xml_schema))
 
 parser = UniversalParser.UniversalParser(csv_data)
-print("Detected format: ", parser._data_format)
+print("Detected format: ", parser.get_detected_format())
 print(parser.parse())
 print(parser.validate(csv_schema))
 
 parser = UniversalParser.UniversalParser(yaml_data)
-print("Detected format: ", parser._data_format)
+print("Detected format: ", parser.get_detected_format())
 print(parser.parse())
 print(parser.validate(yaml_schema))
 ```

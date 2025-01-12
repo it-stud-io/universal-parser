@@ -18,6 +18,9 @@ class UniversalParser:
 
     def validate(self, schema):
         return self._parser_engine.validate(self._data, schema)
+
+    def get_detected_format(self):
+        return self._data_format
         
     def _detect_format(self):
         try:
